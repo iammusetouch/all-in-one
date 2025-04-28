@@ -1,3 +1,99 @@
 {
-  "exampleKey": "exampleValue"
+    "excluded_patterns": [
+        // Системные файлы и директории
+        ".git",
+        ".gitignore", 
+        ".idea",
+        ".vscode",
+        ".DS_Store",
+        ".snapshots",
+        
+        // Зависимости и сборка
+        "node_modules",
+        "gradle",
+        "gradlew",
+        "gradlew.*",
+        "target",
+        "dist",
+        "build",
+        "coverage",
+        "__pycache__",
+        
+        // Временные файлы
+        "*.log",
+        "*.tmp",
+        "*.bak",
+        "*.swp",
+        "*.swo",
+        "*.lock",
+        "*.iml",
+        
+        // Минифицированные файлы
+        "*.min.js",
+        "*.min.css",
+        
+        // Конфигурационные файлы
+        ".marketing",
+        ".env",
+        ".env.*",
+        ".npmrc",
+        
+        // Медиафайлы и дизайн
+        "*.{jpg,jpeg,png,gif,bmp,tiff,ico,svg,webp}",
+        "*.{psd,ai,eps,indd,raw,cr2,nef}",
+        "*.{mp4,mov,avi,wmv,flv,mkv,webm,m4v}",
+        "*.{prproj,aep,psb,xcf,sketch,fig,xd}",
+        
+        // Базы данных и дампы
+        "*.{db,sqlite,sqlite3,mdb,accdb}",
+        "*.{frm,myd,myi,ibd,dbf,rdb,aof}",
+        "*.{pdb,sdb,s3db,ddb}",
+        "*.db-{shm,wal}",
+        "*.{sql,sqlitedb}",
+        "dump.{sql,rdb}",
+        
+        // Бинарные файлы и архивы
+        "*.{exe,dll,so,dylib,app,dmg}",
+        "*.{jar,war,ear,vsix}",
+        "*.{zip,tar,tgz,rar,7z}",
+        "*.{iso,msi,deb,rpm,pkg}",
+        "*.{apk,aab,ipa}",
+        "*.{nupkg,snap,whl,gem}",
+        
+        // Скомпилированные файлы
+        "*.{pyc,pyo,pyd,class}",
+        "*.{o,obj,lib,a,map}"
+    ],
+    "included_patterns": [
+        // Конфигурационные файлы сборки
+        "build.gradle",
+        "settings.gradle",
+        "gradle.properties",
+        "pom.xml",
+        "Makefile",
+        "CMakeLists.txt",
+        
+        // Файлы зависимостей
+        "package.json",
+        "requirements.txt",
+        "Pipfile",
+        "Gemfile",
+        "composer.json",
+        
+        // Файлы настроек
+        ".editorconfig",
+        ".eslintrc.{json,js}",
+        ".prettierrc",
+        ".babelrc",
+        ".dockerignore",
+        ".gitattributes",
+        ".stylelintrc",
+        ".npmrc"
+    ],
+    "default": {
+        "default_prompt": "Enter your prompt here",
+        "default_include_all_files": false,
+        "default_include_entire_project_structure": true
+    }
 }
+
